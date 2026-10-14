@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kauann &amp; Sophia · 1 ano</title>
+  <meta name="description" content="Um ano juntos.">
+  <meta name="theme-color" content="#f6efe6">
+  <meta property="og:title" content="Kauann & Sophia · 1 ano">
+  <meta property="og:description" content="Um presente para você.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path fill='%237a1f2b' d='M16 28s-11-6.6-11-15a6 6 0 0 1 11-3.3A6 6 0 0 1 27 13c0 8.4-11 15-11 15z'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Instrument+Sans:wght@400;500;600&family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <!-- Abertura -->
+  <div class="abertura" id="abertura">
+    <button class="envelope" id="abrir" type="button" aria-label="Abrir o presente">
+      <span class="envelope__aba" aria-hidden="true"></span>
+      <span class="envelope__selo" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><path d="M16 27s-10-6-10-13.6A5.4 5.4 0 0 1 16 10.4a5.4 5.4 0 0 1 10 3C26 21 16 27 16 27z"/></svg>
+      </span>
+      <span class="envelope__para" data-campo="abertura.para"></span>
+    </button>
+    <p class="abertura__dica" data-campo="abertura.dica"></p>
+  </div>
+
+  <main id="conteudo" hidden>
+    <!-- Topo -->
+    <header class="topo">
+      <p class="sobretitulo">um ano de</p>
+      <h1 class="nomes">
+        <span data-campo="ele"></span>
+        <span class="e">&amp;</span>
+        <span data-campo="ela"></span>
+      </h1>
+      <p class="frase" data-campo="frase"></p>
+
+      <div class="contador" aria-live="off">
+        <p class="contador__rotulo">juntos há</p>
+        <div class="contador__grade">
+          <div><strong id="c-dias">0</strong><span>dias</span></div>
+          <div><strong id="c-horas">0</strong><span>horas</span></div>
+          <div><strong id="c-min">0</strong><span>minutos</span></div>
+          <div><strong id="c-seg">0</strong><span>segundos</span></div>
+        </div>
+      </div>
+
+      <a class="rolar" href="#historia">continuar <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <!-- Linha do tempo -->
+    <section class="secao" id="historia">
+      <h2 class="secao__titulo"><span class="numeral">I.</span> Nossa história</h2>
+      <ol class="linha" id="linha"></ol>
+    </section>
+
+    <!-- Galeria -->
+    <section class="secao secao--larga" id="galeria">
+      <h2 class="secao__titulo"><span class="numeral">II.</span> Nós dois</h2>
+      <div class="galeria" id="grade-fotos"></div>
+    </section>
+
+    <!-- Motivos -->
+    <section class="secao" id="motivos">
+      <h2 class="secao__titulo"><span class="numeral">III.</span> Alguns motivos</h2>
+      <p class="secao__apoio">Toque em cada cartão.</p>
+      <ul class="motivos" id="lista-motivos"></ul>
+    </section>
+
+    <!-- Música -->
+    <section class="secao" id="musica" hidden>
+      <h2 class="secao__titulo"><span class="numeral">IV.</span> Nossa música</h2>
+      <div class="musica" id="player"></div>
+    </section>
+
+    <!-- Carta -->
+    <section class="secao" id="carta">
+      <h2 class="secao__titulo"><span class="numeral" id="num-carta">IV.</span> Uma carta</h2>
+      <article class="carta">
+        <p class="carta__saudacao" data-campo="carta.saudacao"></p>
+        <div id="carta-texto"></div>
+        <p class="carta__assinatura" data-campo="carta.assinatura"></p>
+      </article>
+    </section>
+
+    <footer class="fim">
+      <button class="coracao" id="coracao" type="button" aria-label="Mandar corações">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27s-10-6-10-13.6A5.4 5.4 0 0 1 16 10.4a5.4 5.4 0 0 1 10 3C26 21 16 27 16 27z"/></svg>
+      </button>
+      <p class="fim__texto" data-campo="rodape"></p>
+    </footer>
+  </main>
+
+  <!-- Foto ampliada -->
+  <dialog class="ampliada" id="ampliada">
+    <button class="ampliada__fechar" type="button" aria-label="Fechar">×</button>
+    <figure>
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="conteudo.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
