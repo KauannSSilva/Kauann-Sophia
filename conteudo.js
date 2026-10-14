@@ -23,37 +23,44 @@ window.SITE = {
   // Frase grande logo no topo
   frase: "Você veio na minha vida para somar, e hoje eu não consigo me ver sem você nela.",
 
-  // Linha do tempo: adicione ou remova itens à vontade
+  // Linha do tempo: adicione ou remova itens à vontade.
+  // "foto" aceita um arquivo; "fotos" aceita uma lista de arquivos.
   historia: [
     {
       quando: "Antes de você",
       titulo: "Um cara meio frio",
       texto: "Isolado, focado no trabalho, nos estudos e nas cobranças da vida adulta. Namorar nem passava pela minha cabeça.",
-      foto: "",
     },
     {
-      quando: "O começo",
+      quando: "17 de outubro",
       titulo: "Um “UAU” nos seus stories",
       texto: "Você me pegou desprevenido. Nunca pensei que você fosse cair no “UAU” que eu mandei kkkkk",
       foto: "fotos/historia-1.jpg",
     },
     {
-      quando: "14 de outubro de 2025",
-      titulo: "Começamos",
-      texto: "O dia em que a nossa história começou.",
+      quando: "Outubro",
+      titulo: "Nosso primeiro encontro",
+      texto: "A gente saiu pela primeira vez, e dali em diante não parou mais.",
       foto: "fotos/historia-2.jpg",
+    },
+    {
+      quando: "20 de fevereiro de 2026",
+      titulo: "O concerto de violino",
+      texto: "Foi muito melhor do que qualquer concerto, porque foi ali, com você de vestido branco, que eu te pedi em namoro.",
+      fotos: ["fotos/historia-3.jpg", "fotos/galeria-05.jpg", "fotos/historia-4.jpg"],
+      destaque: true,
     },
     {
       quando: "Ao longo do ano",
       titulo: "Aprendendo com você",
       texto: "Mais paciência, conquistas que eu jamais pensaria alcançar, e você acreditando em mim o tempo todo.",
-      foto: "fotos/historia-3.jpg",
+      foto: "fotos/galeria-08.jpg",
     },
     {
-      quando: "14 de outubro de 2026",
-      titulo: "1 ano",
+      quando: "Hoje",
+      titulo: "1 ano juntos",
       texto: "E que Deus nos mantenha unidos até que a morte nos separe.",
-      foto: "fotos/historia-4.jpg",
+      foto: "fotos/galeria-04.jpg",
     },
   ],
 
@@ -62,11 +69,8 @@ window.SITE = {
     { foto: "fotos/galeria-01.jpg", legenda: "" },
     { foto: "fotos/galeria-02.jpg", legenda: "" },
     { foto: "fotos/galeria-03.jpg", legenda: "" },
-    { foto: "fotos/galeria-04.jpg", legenda: "" },
-    { foto: "fotos/galeria-05.jpg", legenda: "" },
     { foto: "fotos/galeria-06.jpg", legenda: "" },
     { foto: "fotos/galeria-07.jpg", legenda: "" },
-    { foto: "fotos/galeria-08.jpg", legenda: "" },
     { foto: "fotos/galeria-09.jpg", legenda: "" },
     { foto: "fotos/galeria-10.jpg", legenda: "" },
     { foto: "fotos/galeria-11.jpg", legenda: "" },

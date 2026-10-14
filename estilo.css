@@ -319,6 +319,48 @@ button { font: inherit; color: inherit; }
   to { transform: translate(var(--dx), var(--dy)) rotate(var(--rot)) scale(.6); opacity: 0; }
 }
 
+.particula .petalas { fill: var(--rosa); }
+.particula .miolo { fill: #e9b949; }
+
+/* ---------- Corações e flores ao fundo ---------- */
+main { position: relative; z-index: 1; }
+.ambiente { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.flutuante {
+  position: absolute; top: -3rem;
+  animation: cair var(--dur) linear var(--atraso) infinite;
+}
+.flutuante svg { display: block; width: 100%; }
+.flutuante--coracao svg { fill: #b5414f; }
+.flutuante--flor .petalas { fill: #e9b3ad; }
+.flutuante--flor .miolo { fill: #e3b04b; }
+@keyframes cair {
+  0% { transform: translate(0, 0) rotate(0); }
+  50% { transform: translate(var(--balanco), 55vh) rotate(calc(var(--giro) / 2)); }
+  100% { transform: translate(0, 110vh) rotate(var(--giro)); }
+}
+
+/* ---------- Mosaico do pedido ---------- */
+.mosaico {
+  margin-top: 1.4rem; max-width: 26rem;
+  display: grid; grid-template-columns: 1.35fr 1fr; grid-template-rows: 1fr 1fr; gap: .5rem;
+  aspect-ratio: 5 / 4;
+}
+.mosaico .foto { aspect-ratio: auto; height: 100%; }
+.mosaico .foto:nth-child(3) { grid-column: 2; grid-row: 1 / 3; }
+.marco--destaque .marco__titulo { color: var(--vinho); font-style: italic; }
+.marco--destaque::before {
+  border: 0; border-radius: 0; background: none !important;
+  width: 1rem; height: 1rem; top: .3rem; left: -.05rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%237a1f2b' d='M16 27s-10-6-10-13.6A5.4 5.4 0 0 1 16 10.4a5.4 5.4 0 0 1 10 3C26 21 16 27 16 27z'/%3E%3C/svg%3E") !important;
+  background-size: contain !important;
+}
+@media (min-width: 760px) {
+  .mosaico { margin-left: auto; }
+  .marco:nth-child(even) .mosaico { margin-left: 0; }
+  .marco--destaque::before { right: -.5rem; left: auto; }
+  .marco--destaque:nth-child(even)::before { left: -.5rem; right: auto; }
+}
+
 /* ---------- Revelar ao rolar ---------- */
 .revelar { opacity: 0; transform: translateY(18px); transition: opacity .9s ease, transform .9s ease; }
 .revelar.visivel { opacity: 1; transform: none; }

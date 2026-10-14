@@ -36,7 +36,14 @@
   S.historia.forEach((m) => {
     const li = el("li", "marco revelar");
     li.append(el("p", "marco__quando", m.quando), el("h3", "marco__titulo", m.titulo), el("p", "marco__texto", m.texto));
-    if (m.foto) li.append(foto(m.foto, m.titulo));
+    if (m.destaque) li.classList.add("marco--destaque");
+    const lista = m.fotos || (m.foto ? [m.foto] : []);
+    if (lista.length === 1) li.append(foto(lista[0], m.titulo));
+    if (lista.length > 1) {
+      const mosaico = el("div", "mosaico");
+      lista.forEach((src) => mosaico.append(foto(src, m.titulo)));
+      li.append(mosaico);
+    }
     linha.append(li);
   });
 
@@ -129,12 +136,37 @@
 
   // Corações
   const svgCoracao = '<svg viewBox="0 0 32 32"><path d="M16 27s-10-6-10-13.6A5.4 5.4 0 0 1 16 10.4a5.4 5.4 0 0 1 10 3C26 21 16 27 16 27z"/></svg>';
+  const svgFlor = '<svg viewBox="0 0 32 32"><g class="petalas">' +
+    [0, 72, 144, 216, 288].map((g) => `<ellipse cx="16" cy="8.5" rx="5" ry="7.5" transform="rotate(${g} 16 16)"/>`).join("") +
+    '</g><circle class="miolo" cx="16" cy="16" r="3.6"/></svg>';
+  const sorteio = () => (Math.random() < 0.5 ? svgCoracao : svgFlor);
   const semMovimento = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Corações e flores caindo ao fundo
+  function ambiente() {
+    if (semMovimento) return;
+    const camada = el("div", "ambiente");
+    camada.setAttribute("aria-hidden", "true");
+    const qtd = innerWidth < 600 ? 12 : 20;
+    for (let i = 0; i < qtd; i++) {
+      const f = el("span", `flutuante ${i % 2 ? "flutuante--flor" : "flutuante--coracao"}`);
+      f.innerHTML = i % 2 ? svgFlor : svgCoracao;
+      f.style.left = `${Math.random() * 100}%`;
+      f.style.width = `${0.7 + Math.random() * 1.1}rem`;
+      f.style.setProperty("--dur", `${14 + Math.random() * 16}s`);
+      f.style.setProperty("--atraso", `${-Math.random() * 30}s`);
+      f.style.setProperty("--balanco", `${(Math.random() - 0.5) * 120}px`);
+      f.style.setProperty("--giro", `${(Math.random() - 0.5) * 540}deg`);
+      f.style.opacity = (0.25 + Math.random() * 0.35).toFixed(2);
+      camada.append(f);
+    }
+    document.body.prepend(camada);
+  }
   function chuva(x, y, qtd) {
     if (semMovimento) return;
     for (let i = 0; i < qtd; i++) {
       const p = el("span", "particula");
-      p.innerHTML = svgCoracao;
+      p.innerHTML = sorteio();
       p.style.left = `${x - 8}px`;
       p.style.top = `${y - 8}px`;
       p.style.setProperty("--dx", `${(Math.random() - 0.5) * 220}px`);
@@ -160,6 +192,7 @@
     setTimeout(() => {
       $("#conteudo").hidden = false;
       abertura.classList.add("saiu");
+      ambiente();
       window.scrollTo(0, 0);
     }, semMovimento ? 0 : 900);
   }, { once: true });
