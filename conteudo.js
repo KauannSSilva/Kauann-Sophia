@@ -57,10 +57,16 @@ window.SITE = {
       foto: "fotos/galeria-04.jpg",
     },
     {
+      quando: "Copa de 2026",
+      titulo: "Torcendo juntos",
+      texto: "Vimos até a Copa de 2026 juntos. Infelizmente o Brasil acabou sendo eliminado, mas o importante foi estar com você ❤️",
+      foto: "fotos/galeria-08.jpg",
+    },
+    {
       quando: "Ao longo do ano",
       titulo: "Aprendendo com você",
       texto: "Mais paciência, conquistas que eu jamais pensaria alcançar, e você acreditando em mim o tempo todo.",
-      foto: "fotos/galeria-08.jpg",
+      foto: "fotos/galeria-13.jpg",
     },
     {
       quando: "Hoje",
@@ -80,7 +86,6 @@ window.SITE = {
     { foto: "fotos/galeria-10.jpg", legenda: "" },
     { foto: "fotos/galeria-11.jpg", legenda: "" },
     { foto: "fotos/galeria-12.jpg", legenda: "" },
-    { foto: "fotos/galeria-13.jpg", legenda: "" },
     { foto: "fotos/galeria-14.jpg", legenda: "" },
     { foto: "fotos/galeria-15.jpg", legenda: "" },
     { foto: "fotos/galeria-16.jpg", legenda: "" },
