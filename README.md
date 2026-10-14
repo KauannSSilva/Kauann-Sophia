@@ -1,6 +1,6 @@
 # Kauann & Sophia · 1 ano
 
-Site de presente de 1 ano de namoro. HTML, CSS e JavaScript puros, sem instalação.
+Site de presente de 1 ano juntos. HTML, CSS e JavaScript puros, sem instalação.
 
 ## Como editar
 
