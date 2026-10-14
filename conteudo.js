@@ -51,6 +51,12 @@ window.SITE = {
       destaque: true,
     },
     {
+      quando: "Guararema",
+      titulo: "Nossa primeira viagem",
+      texto: "Conhecemos Guararema juntos. A primeira de muitas cidades que ainda vamos visitar, lado a lado.",
+      foto: "fotos/galeria-04.jpg",
+    },
+    {
       quando: "Ao longo do ano",
       titulo: "Aprendendo com você",
       texto: "Mais paciência, conquistas que eu jamais pensaria alcançar, e você acreditando em mim o tempo todo.",
@@ -60,14 +66,13 @@ window.SITE = {
       quando: "Hoje",
       titulo: "1 ano juntos",
       texto: "E que Deus nos mantenha unidos até que a morte nos separe.",
-      foto: "fotos/galeria-04.jpg",
+      foto: "fotos/galeria-02.jpg",
     },
   ],
 
   // Galeria de fotos (legenda é opcional, pode deixar "")
   galeria: [
     { foto: "fotos/galeria-01.jpg", legenda: "" },
-    { foto: "fotos/galeria-02.jpg", legenda: "" },
     { foto: "fotos/galeria-03.jpg", legenda: "" },
     { foto: "fotos/galeria-06.jpg", legenda: "" },
     { foto: "fotos/galeria-07.jpg", legenda: "" },
