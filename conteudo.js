@@ -114,6 +114,7 @@ window.SITE = {
       "Confesso que antes de eu namorar você, eu era um cara meio frio, ficava bem isolado, não me distraía do trabalho, dos estudos, das cobranças da vida adulta. Entretanto, você veio em uma época em que eu nem sequer cogitava namorar. Você me pegou desprevenido kkkkkk! Nunca pensei que você fosse cair no “UAU” que mandei nos seus stories kkkkk",
       "Olha, nesse pouco tempo que estamos juntos, aprendi muita coisa com você, amor. Uma delas é ter mais paciência, uma coisa que ainda estou melhorando, mas que antes de te namorar eu não tinha. Você veio na minha vida para somar, e eu hoje não consigo me ver sem você nela.",
       "Gosto muito do seu jeito de demonstrar afeto: os abraços fortes, o carinho que só você sabe dar kkkkkk. Enfim, amo tudo isso em você. Este ano eu consegui coisas que jamais pensaria em conquistar, e tudo com o seu apoio, pois você sempre acredita em mim, e isso faz uma enorme diferença. Obrigado por isso!",
+      "Agora eu peguei um hobby novo: cozinhar para você, porque eu fico muito feliz vendo a minha namorada feliz comendo kkkkk. Amo isso em você.",
       "Amor, feliz 1 ano juntos! Ainda não é 1 ano de namoro, então se prepare, que logo mais pra frente eu faço outra surpresa. Eu só tenho que te agradecer por chegar na minha vida e ter me completado. O que eu puder fazer para que você seja feliz, pode ter certeza, eu farei, meu amor.",
     ],
     assinatura: "Te amo, Kauann",
