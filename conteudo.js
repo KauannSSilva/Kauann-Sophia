@@ -38,7 +38,7 @@ window.SITE = {
       foto: "fotos/historia-1.jpg",
     },
     {
-      quando: "20 de outubro",
+      quando: "25 de outubro",
       titulo: "Nosso primeiro encontro",
       texto: "A gente saiu pela primeira vez, e dali em diante não parou mais.",
       foto: "fotos/historia-2.jpg",
@@ -80,6 +80,7 @@ window.SITE = {
     { foto: "fotos/galeria-15.jpg", legenda: "" },
     { foto: "fotos/galeria-16.jpg", legenda: "" },
     { foto: "fotos/galeria-17.jpg", legenda: "" },
+    { foto: "fotos/galeria-18.jpg", legenda: "" },
   ],
 
   // Motivos (ela toca no cartão para revelar)
