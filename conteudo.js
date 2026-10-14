@@ -12,7 +12,7 @@ window.SITE = {
   ela: "Sophia",
 
   // Data e hora em que vocês ficaram juntos (ano-mês-diaThora:minuto)
-  inicio: "2025-10-14T00:00",
+  inicio: "2025-10-20T00:00",
 
   // Tela de abertura (o "envelope" que ela toca para abrir)
   abertura: {
@@ -38,7 +38,7 @@ window.SITE = {
       foto: "fotos/historia-1.jpg",
     },
     {
-      quando: "Outubro",
+      quando: "20 de outubro",
       titulo: "Nosso primeiro encontro",
       texto: "A gente saiu pela primeira vez, e dali em diante não parou mais.",
       foto: "fotos/historia-2.jpg",
