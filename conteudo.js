@@ -21,70 +21,88 @@ window.SITE = {
   },
 
   // Frase grande logo no topo
-  frase: "[Um ano atrás eu não sabia, mas a minha vida ia ganhar o seu nome.]",
+  frase: "Você veio na minha vida para somar, e hoje eu não consigo me ver sem você nela.",
 
   // Linha do tempo: adicione ou remova itens à vontade
   historia: [
     {
-      quando: "[Mês de 2025]",
-      titulo: "[Quando a gente se conheceu]",
-      texto: "[Conte aqui como foi o primeiro encontro, onde vocês estavam, o que você pensou dela.]",
+      quando: "Antes de você",
+      titulo: "Um cara meio frio",
+      texto: "Isolado, focado no trabalho, nos estudos e nas cobranças da vida adulta. Namorar nem passava pela minha cabeça.",
+      foto: "",
+    },
+    {
+      quando: "O começo",
+      titulo: "Um “UAU” nos seus stories",
+      texto: "Você me pegou desprevenido. Nunca pensei que você fosse cair no “UAU” que eu mandei kkkkk",
       foto: "fotos/historia-1.jpg",
     },
     {
       quando: "14 de outubro de 2025",
-      titulo: "[O pedido]",
-      texto: "[Como foi o dia em que vocês começaram a namorar.]",
+      titulo: "Começamos",
+      texto: "O dia em que a gente decidiu ser nós dois.",
       foto: "fotos/historia-2.jpg",
     },
     {
-      quando: "[Mês de 2026]",
-      titulo: "[Uma viagem ou um dia inesquecível]",
-      texto: "[Um momento que vocês sempre lembram juntos.]",
+      quando: "Ao longo do ano",
+      titulo: "Aprendendo com você",
+      texto: "Mais paciência, conquistas que eu jamais pensaria alcançar, e você acreditando em mim o tempo todo.",
       foto: "fotos/historia-3.jpg",
     },
     {
-      quando: "Hoje",
+      quando: "14 de outubro de 2026",
       titulo: "1 ano",
-      texto: "[E é só o começo.]",
+      texto: "E que Deus nos mantenha unidos até que a morte nos separe.",
       foto: "fotos/historia-4.jpg",
     },
   ],
 
-  // Galeria de fotos (legenda é opcional)
+  // Galeria de fotos (legenda é opcional, pode deixar "")
   galeria: [
-    { foto: "fotos/galeria-1.jpg", legenda: "[legenda]" },
-    { foto: "fotos/galeria-2.jpg", legenda: "[legenda]" },
-    { foto: "fotos/galeria-3.jpg", legenda: "[legenda]" },
-    { foto: "fotos/galeria-4.jpg", legenda: "[legenda]" },
-    { foto: "fotos/galeria-5.jpg", legenda: "[legenda]" },
-    { foto: "fotos/galeria-6.jpg", legenda: "[legenda]" },
+    { foto: "fotos/galeria-01.jpg", legenda: "" },
+    { foto: "fotos/galeria-02.jpg", legenda: "" },
+    { foto: "fotos/galeria-03.jpg", legenda: "" },
+    { foto: "fotos/galeria-04.jpg", legenda: "" },
+    { foto: "fotos/galeria-05.jpg", legenda: "" },
+    { foto: "fotos/galeria-06.jpg", legenda: "" },
+    { foto: "fotos/galeria-07.jpg", legenda: "" },
+    { foto: "fotos/galeria-08.jpg", legenda: "" },
+    { foto: "fotos/galeria-09.jpg", legenda: "" },
+    { foto: "fotos/galeria-10.jpg", legenda: "" },
+    { foto: "fotos/galeria-11.jpg", legenda: "" },
+    { foto: "fotos/galeria-12.jpg", legenda: "" },
+    { foto: "fotos/galeria-13.jpg", legenda: "" },
+    { foto: "fotos/galeria-14.jpg", legenda: "" },
+    { foto: "fotos/galeria-15.jpg", legenda: "" },
+    { foto: "fotos/galeria-16.jpg", legenda: "" },
+    { foto: "fotos/galeria-17.jpg", legenda: "" },
   ],
 
   // Motivos (ela toca no cartão para revelar)
   motivos: [
-    "[O jeito que você ri das minhas piadas ruins]",
-    "[Motivo 2]",
-    "[Motivo 3]",
-    "[Motivo 4]",
-    "[Motivo 5]",
-    "[Motivo 6]",
+    "Seus abraços fortes",
+    "O carinho que só você sabe dar",
+    "Você sempre acredita em mim",
+    "Você me ensinou a ter mais paciência",
+    "Você veio para somar na minha vida",
+    "Você caiu no meu “UAU” kkkkk",
   ],
 
   // Carta final
   carta: {
-    saudacao: "[Meu amor,]",
+    saudacao: "Sophia, meu amor,",
     paragrafos: [
-      "[Escreva aqui a sua carta. Pode ser longa, pode ser curta. Cada item desta lista vira um parágrafo.]",
-      "[Segundo parágrafo.]",
-      "[Terceiro parágrafo.]",
+      "Hoje faz 1 ano que estamos juntos. Passamos por inúmeras coisas até aqui e creio que o Senhor irá nos manter unidos até que a morte nos separe.",
+      "Confesso que antes de eu namorar você, eu era um cara meio frio, ficava bem isolado, não me distraía do trabalho, dos estudos, das cobranças da vida adulta. Entretanto, você veio em uma época em que eu nem sequer cogitava namorar, me pegou desprevenido kkkkkk, nunca pensei que você fosse cair no “UAU” que mandei nos seus stories kkkkk",
+      "Olha, nesse pouco tempo que estamos juntos, aprendi muita coisa com você, amor. Uma delas é ter mais paciência, uma coisa que ainda estou melhorando, mas que antes de te namorar eu não tinha. Você veio na minha vida para somar, e eu hoje não consigo me ver sem você nela.",
+      "Gosto muito do seu jeito de demonstrar afeto, abraços fortes, carinho que só você sabe dar kkkkkk, enfim, amo tudo isso em você. Esse ano eu consegui coisas que jamais pensaria em conquistar, e tudo com o seu apoio, pois você sempre acredita em mim, e isso faz uma enorme diferença. Obrigado por isso!",
     ],
-    assinatura: "[Com amor, Kauann]",
+    assinatura: "Te amo, Kauann",
   },
 
   // Música de vocês (opcional). Cole o link de uma música do Spotify
   // (ex.: https://open.spotify.com/track/...) ou deixe vazio "".
   musica: "",
 
-  rodape: "Feliz 1 ano, Sophia.",
+  rodape: "Feliz 1 ano, meu amor.",
 };
