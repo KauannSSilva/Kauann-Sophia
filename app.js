@@ -110,21 +110,13 @@
   const carta = $("#carta-texto");
   S.carta.paragrafos.forEach((p) => carta.append(el("p", null, p)));
 
-  // Contador
-  const inicio = new Date(S.inicio);
-  const fmt = (n) => n.toLocaleString("pt-BR");
-  function contar() {
-    let s = Math.max(0, Math.floor((Date.now() - inicio) / 1000));
-    const d = Math.floor(s / 86400); s %= 86400;
-    const h = Math.floor(s / 3600); s %= 3600;
-    const mi = Math.floor(s / 60); s %= 60;
-    $("#c-dias").textContent = fmt(d);
-    $("#c-horas").textContent = h;
-    $("#c-min").textContent = mi;
-    $("#c-seg").textContent = s;
-  }
-  contar();
-  setInterval(contar, 1000);
+  // Tempo juntos
+  const tempo = $("#tempo");
+  S.tempo.forEach((t) => {
+    const d = el("div");
+    d.append(el("strong", null, t.numero), el("span", null, t.rotulo));
+    tempo.append(d);
+  });
 
   // Revelar ao rolar
   const obs = new IntersectionObserver((itens) => {

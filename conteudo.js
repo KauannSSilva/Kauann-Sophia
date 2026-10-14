@@ -11,8 +11,11 @@ window.SITE = {
   ele: "Kauann",
   ela: "Sophia",
 
-  // Data e hora em que vocês ficaram juntos (ano-mês-diaThora:minuto)
-  inicio: "2025-10-20T00:00",
+  // Números grandes logo abaixo dos nomes
+  tempo: [
+    { numero: "8", rotulo: "meses de namoro" },
+    { numero: "1", rotulo: "ano juntos" },
+  ],
 
   // Tela de abertura (o "envelope" que ela toca para abrir)
   abertura: {
@@ -121,4 +124,5 @@ window.SITE = {
   musica: "",
 
   rodape: "Feliz 1 ano, meu amor.",
+  dedicatoria: "Para a mulher mais linda, por quem eu sou completamente apaixonado.",
 };
